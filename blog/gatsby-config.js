@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby BLog`,
+    title: `Gatsby Blog V2`,
     description: `IT-DEV-164 Gatsby Blog.`,
     author: `Bill Lee`,
     contact: {
@@ -25,6 +25,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
