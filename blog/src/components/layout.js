@@ -38,14 +38,18 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={Gray}>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title || `Title`} />
       <Content>
-        <Main>{children}</Main>
-        <Footer>
+        <main m={20}>{children}</main>
+        <footer
+          style={{
+            marginTop: `2rem`,
+          }}
+        >
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </Footer>
+        </footer>
       </Content>
     </ThemeProvider>
   )
